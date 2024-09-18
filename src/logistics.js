@@ -1,9 +1,13 @@
+/**
+ * Logistical math class.
+ */
 class Logistics {
 
     /**
-     * 
-     * @param {Array} numArray - 
-     * @returns 
+     * Sums up numbers from the arguments array.
+     *
+     * @param {number[]} numArray - An array of numbers.
+     * @returns {number} - The sum of all numbers from the argument.
      */
   sum(numArray) {
     let result
