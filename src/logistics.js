@@ -17,6 +17,12 @@ class Logistics {
     return result
   }
 
+  /**
+   * Calculates the mean from the arguments array.
+   *
+   * @param {number[]} numArray - An array of numbers.
+   * @param {number} - The mean of all numbers from the argument.
+   */
   mean(numArray) {
 
   }
