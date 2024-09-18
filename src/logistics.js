@@ -27,6 +27,12 @@ class Logistics {
 
   }
 
+  /**
+   * Calculates the median from the arguments array.
+   *
+   * @param {number[]} numArray - An array of numbers.
+   * @param {number} - The median of all numbers from the argument.
+   */
   median(numArray) {
 
   }
