@@ -1,7 +1,25 @@
 /**
  * Logistical math class.
  */
-class Logistics {
+class Logistics {  
+  /**
+   * 
+   */
+  __isNumber(numArray) {
+
+  }
+
+  /**
+   * 
+   * @param {*} numArray 
+   */
+  __checkInput(numArray) {
+    if (Array.isArray(numArray)) {
+      __isNumber(numArray)
+    }
+    throw new TypeError ()
+    
+  }
 
     /**
      * Sums up numbers from the arguments array.
@@ -67,6 +85,12 @@ class Logistics {
 
   }
 
+    /**
+   * Converts the numbers in the array to their proportional percentage values based on the sum of the array.
+   *
+   * @param {number[]} numArray - An array of numbers.
+   * @returns {number[]} - An array where each number represents its proportion of the total sum as a percentage.
+   */
   convertToPercentage(numArray) {
 
   }
