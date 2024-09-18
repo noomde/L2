@@ -21,7 +21,7 @@ class Logistics {
    * Calculates the mean from the arguments array.
    *
    * @param {number[]} numArray - An array of numbers.
-   * @param {number} - The mean of all numbers from the argument.
+   * @returns {number} - The mean of all numbers from the argument.
    */
   mean(numArray) {
 
@@ -31,12 +31,18 @@ class Logistics {
    * Calculates the median from the arguments array.
    *
    * @param {number[]} numArray - An array of numbers.
-   * @param {number} - The median of all numbers from the argument.
+   * @returns {number} - The median of all numbers from the argument.
    */
   median(numArray) {
 
   }
 
+  /**
+   * sorts the argument from biggest to smallest.
+   *
+   * @param {number[]} numArray - An array of numbers.
+   * @returns {number[]} - The sorted array from biggest to smallest.
+   */
   sortByDescending(numArray) {
 
   }
