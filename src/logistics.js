@@ -57,6 +57,12 @@ class Logistics {
 
   }
 
+  /**
+   * Converts the numbers in the array to their proportional decimal values based on the sum of the array.
+   *
+   * @param {number[]} numArray - An array of numbers.
+   * @returns {number[]} - An array where each number represents its proportion of the total sum as a decimal.
+   */
   convertToDecimal(numArray) {
 
   }
