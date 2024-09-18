@@ -47,6 +47,12 @@ class Logistics {
 
   }
 
+  /**
+   * sorts the argument from smallest to biggest.
+   *
+   * @param {number[]} numArray - An array of numbers.
+   * @returns {number[]} - The sorted array from smallest to biggest.
+   */
   sortByAscending(numArray) {
 
   }
