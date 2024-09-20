@@ -65,6 +65,16 @@ class Logistics {
   }
 
   /**
+   * Calculates the mode from the arguments array.
+   *
+   * @param {number[]} numArray - An array of numbers.
+   * @returns {number} - The mode from the argument array.
+   */
+  mode() {
+
+  }
+
+  /**
    * sorts the argument from biggest to smallest.
    *
    * @param {number[]} numArray - An array of numbers.
