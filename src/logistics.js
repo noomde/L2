@@ -27,7 +27,7 @@ class Logistics {
     for (let number of numArray) {
       result += number
     }
-    return result/numArray.length
+    return result / numArray.length
   }
 
   /**
@@ -81,18 +81,24 @@ class Logistics {
     let result = []
 
     for (let number of numArray) {
-      result.push(number/sumOfArray)
+      result.push(number / sumOfArray)
     }
     return result
   }
 
   /**
- * Converts the numbers in the array to their proportional percentage values based on the sum of the array.
- *
- * @param {number[]} numArray - An array of numbers.
- * @returns {number[]} - An array where each number represents its proportion of the total sum as a percentage.
- */
+   * Converts the numbers in the array to their proportional percentage values based on the sum of the array.
+   *
+   * @param {number[]} numArray - An array of numbers.
+   * @returns {number[]} - An array where each number represents its proportion of the total sum as a percentage string.
+   */
   convertToPercentage(numArray) {
+    let decimalArray = this.convertToDecimal(numArray)
+    let result = []
 
+    for (let number of decimalArray) {
+      result.push(`${number * 100}%`)
+    }
+    return result
   }
 }
