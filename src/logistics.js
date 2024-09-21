@@ -24,9 +24,8 @@ class Logistics {
    */
   mean(numArray) {
     let result
-    for (let number in numArray) {
+    for (let number of numArray) {
       result += number
-      return result/numArray.length
     }
     return result/numArray.length
   }
@@ -78,7 +77,13 @@ class Logistics {
    * @returns {number[]} - An array where each number represents its proportion of the total sum as a decimal.
    */
   convertToDecimal(numArray) {
+    const sumOfArray = this.sum(numArray)
+    let result = []
 
+    for (let number of numArray) {
+      result.push(number/sumOfArray)
+    }
+    return result
   }
 
   /**
