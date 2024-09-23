@@ -1,3 +1,9 @@
+// Noticed just now that there are alot of similiar npm packagages so to make mine more unique it will make the calculations and be able to explain how to make these kind of calculations yuorself.
+// I will also try to add a very good system for checking the correct input.
+// This way my module will allow you to make these calculations while learning the process of it.
+// So kinda like an educational tool. This could be built into some kind of positive math learning app.
+// I kinda want it to have the possibility to show percentage of and decimal values aswell kinda like in an answer cheat.
+
 /**
  * Statistical math class.
  */
@@ -17,11 +23,11 @@ class Statistics {
   }
 
   /**
- * sorts a copiec argument from biggest to smallest.
- *
- * @param {number[]} numArray - An array of numbers.
- * @returns {number[]} - The sorted array from biggest to smallest.
- */
+   * sorts a copiec argument from biggest to smallest.
+   *
+   * @param {number[]} numArray - An array of numbers.
+   * @returns {number[]} - The sorted array from biggest to smallest.
+   */
   sortByDescending(numArray) {
     return [...numArray].sort((x, y) => y - x)
   }
@@ -61,7 +67,7 @@ class Statistics {
     const middleOfArray = Math.floor(sortedArray.length / 2)
 
     if (sortedArray.length % 2 === 0) {
-      return(Math.floor(sortedArray[middleOfArray - 1]) + sortedArray[middleOfArray]) / 2
+      return (Math.floor(sortedArray[middleOfArray - 1]) + sortedArray[middleOfArray]) / 2
     }
     return sortedArray[middleOfArray]
   }

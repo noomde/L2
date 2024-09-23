@@ -2,7 +2,7 @@
 
 ## Overview
 
-### This module was created to handle logistic operations such as proportional conversions, calculations, and various logistic tasks. The core functionality of the module is designed to optimize operations that involve scaling values, particularly in contexts where proportional relationships need to be maintained, such as in supply chains, inventory management, or data analysis.
+### This module was created to handle logistic/statistical operations such as proportional conversions, calculations, and various logistic tasks. The core functionality of the module is designed to optimize operations that involve scaling values, particularly in contexts where proportional relationships need to be maintained, such as in supply chains, inventory management, or data analysis.
 
 ## Why Create a logistic module
 
