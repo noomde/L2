@@ -17,6 +17,26 @@ class Logistics {
   }
 
   /**
+ * sorts a copiec argument from biggest to smallest.
+ *
+ * @param {number[]} numArray - An array of numbers.
+ * @returns {number[]} - The sorted array from biggest to smallest.
+ */
+  sortByDescending(numArray) {
+    return [...numArray].sort((x, y) => y - x)
+  }
+
+  /**
+   * sorts a copied argument from smallest to biggest.
+   *
+   * @param {number[]} numArray - An array of numbers.
+   * @returns {number[]} - The sorted array from smallest to biggest.
+   */
+  sortByAscending(numArray) {
+    return [...numArray].sort((x, y) => x - y)
+  }
+
+  /**
    * Calculates the mean from the arguments array.
    *
    * @param {number[]} numArray - An array of numbers.
@@ -37,7 +57,12 @@ class Logistics {
    * @returns {number} - The median of all numbers from the argument.
    */
   median(numArray) {
+    const sortedArray = this.sortByAscending(numArray)
 
+    if (sortedArray.length % 2 === 0) {
+      return(Math.floor(sortedArray[sortedArray.length / 2 - 1]) + sortedArray[sortedArray.length / 2]) / 2
+    }
+    return sortedArray[sortedArray[sortedArray.length / 2]]
   }
 
   /**
@@ -48,26 +73,6 @@ class Logistics {
    */
   mode(numArray) {
     // Try nested loop
-  }
-
-  /**
-   * sorts a copiec argument from biggest to smallest.
-   *
-   * @param {number[]} numArray - An array of numbers.
-   * @returns {number[]} - The sorted array from biggest to smallest.
-   */
-  sortByDescending(numArray) {
-    return [...numArray].sort((x, y) => y - x)
-  }
-
-  /**
-   * sorts a copied argument from smallest to biggest.
-   *
-   * @param {number[]} numArray - An array of numbers.
-   * @returns {number[]} - The sorted array from smallest to biggest.
-   */
-  sortByAscending(numArray) {
-    return [...numArray].sort((x, y) => x - y)
   }
 
   /**
