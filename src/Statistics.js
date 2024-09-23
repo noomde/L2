@@ -8,7 +8,7 @@ import { modeCalculations } from './modeCalculations.js'
 /**
  * Statistical math class.
  */
-class Statistics {
+export class Statistics {
   /**
    * Sums up numbers from the arguments array.
    *
