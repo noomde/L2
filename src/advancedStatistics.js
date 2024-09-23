@@ -35,6 +35,9 @@ class advancedStatistics extends Statistics {
 
       result = modeCalculations.updateMaxMode(modeMap, number, maximumCount)
     }
+    if (result === undefined) {
+      return 'No mode available'
+    }
     return result
   }
 }
