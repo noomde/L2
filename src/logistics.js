@@ -80,9 +80,9 @@ class Statistics {
     for (let i = 0; i < numArray.length; i++) {
       let number = numArray[i]
 
-      this.__updateModeCount()
+      this.__updateModeCount(modeMap, number)
 
-      result = this.__updateMaxMode()
+      result = this.__updateMaxMode(modeMap, number, maximumCount)
     }
     return result
   }
