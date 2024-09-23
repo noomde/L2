@@ -1,3 +1,6 @@
+/**
+ * 
+ */
 export class modeCalculations {
     static updateModeCount(modeMap, number) {
         if (modeMap[number] === undefined) {
