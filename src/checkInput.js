@@ -25,9 +25,10 @@ class checkInput {
    * @returns {void}
    */
   __checkInput(numArray) {
-    if (Array.isArray(numArray)) {
+    if (Array.isArray(numArray) || numArray.length > 0) {
       this.__isNumber(numArray)
+      return
     }
-    throw new TypeError('The argument needs to be an Array.')
+    throw new TypeError('The argument needs to be an Array and can not be empty.')
   }
 }

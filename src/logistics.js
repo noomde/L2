@@ -1,7 +1,7 @@
 /**
- * Logistical math class.
+ * Statistical math class.
  */
-class Logistics {
+class Statistics {
   /**
    * Sums up numbers from the arguments array.
    *
@@ -73,7 +73,18 @@ class Logistics {
    * @returns {number} - The mode from the argument array.
    */
   mode(numArray) {
-    // Try nested loop
+    let modeMap = {}
+    let maximumCount = 0
+    let result
+
+    for (let i = 0; i < numArray.length; i++) {
+      let number = numArray[i]
+
+      this.__updateModeCount()
+
+      result = this.__updateMaxMode()
+    }
+    return result
   }
 
   /**
