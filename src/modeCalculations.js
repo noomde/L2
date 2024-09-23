@@ -1,5 +1,5 @@
-class modeCalculations {
-    __updateModeCount(modeMap, number) {
+export class modeCalculations {
+    static updateModeCount(modeMap, number) {
         if (modeMap[number] === undefined) {
             modeMap[number] = 1
         } else {
@@ -7,8 +7,9 @@ class modeCalculations {
         }
     }
 
-    __updateMaxMode(modeMap, number, maximumCount) {
+    static updateMaxMode(modeMap, number, maximumCount) {
         if (modeMap[number] > maximumCount) {
+            maximumCount = modeMap[number]
             return number
         }
         return

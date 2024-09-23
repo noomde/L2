@@ -3,6 +3,7 @@
 // This way my module will allow you to make these calculations while learning the process of it.
 // So kinda like an educational tool. This could be built into some kind of positive math learning app.
 // I kinda want it to have the possibility to show percentage of and decimal values aswell kinda like in an answer cheat.
+import { modeCalculations } from './modeCalculations.js'
 
 /**
  * Statistical math class.
@@ -86,9 +87,9 @@ class Statistics {
     for (let i = 0; i < numArray.length; i++) {
       let number = numArray[i]
 
-      this.__updateModeCount(modeMap, number)
+      modeCalculations.updateModeCount(modeMap, number)
 
-      result = this.__updateMaxMode(modeMap, number, maximumCount)
+      result = modeCalculations.updateMaxMode(modeMap, number, maximumCount)
     }
     return result
   }
