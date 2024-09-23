@@ -58,11 +58,12 @@ class Logistics {
    */
   median(numArray) {
     const sortedArray = this.sortByAscending(numArray)
+    const middleOfArray = Math.floor(sortedArray.length / 2)
 
     if (sortedArray.length % 2 === 0) {
-      return(Math.floor(sortedArray[sortedArray.length / 2 - 1]) + sortedArray[sortedArray.length / 2]) / 2
+      return(Math.floor(sortedArray[middleOfArray - 1]) + sortedArray[middleOfArray]) / 2
     }
-    return sortedArray[sortedArray[sortedArray.length / 2]]
+    return sortedArray[middleOfArray]
   }
 
   /**
