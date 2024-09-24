@@ -4,26 +4,19 @@ export class varianceCalculations {
    *
    * @param {number[]} numArray - An array of numbers.
    * @param {number} mean - The mean of numArray.
-   * @returns 
+   * @returns {number[]} - The subtracted and squared mean.
    */
-  static subtractMean(numArray, mean) {
+  static squareAndSubtractDifference(numArray, mean) {
     let numArrayCopy = [...numArray]
     for (let i = 0; i < numArrayCopy.length; i++) {
-      numArrayCopy[i] - mean
-    }
-    return numArrayCopy
-  }
-
-  static squareDifference(numArray) {
-    let numArrayCopy = [...numArray]
-    for (let i = 0; i < numArrayCopy.length; i++) {
-      numArrayCopy[i] ** 2
+      numArrayCopy[i] -= mean
+      numArrayCopy[i] **= 2
     }
     return numArrayCopy
   }
 
   static calculateSampleVariance(numArray) {
-    let divident
+    let divident = 0
     for (let number of numArray) {
       divident += number
     }

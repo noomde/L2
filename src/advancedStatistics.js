@@ -7,18 +7,38 @@ import { varianceCalculations } from './calculations/varianceCalculations.js'
  */
 class advancedStatistics extends Statistics {
 
+  /**
+   * Calculates the population variance from the argument array.
+   *
+   * @param {number[]} numArray - An array of numbers.
+   * @returns {number} The population variance.
+   */
   populationVariance(numArray) {
-    const squaredDifference = varianceCalculations.subtractMean(varianceCalculations.squareDifference())
+    const mean = this.mean(numArray)
+    const squaredDifference = varianceCalculations.subtractMean(numArray, mean)
 
     return this.mean(squaredDifference)
   }
 
-  sampleVariance() {
-    const squaredDifference = varianceCalculations.subtractMean(varianceCalculations.squareDifference())
+  /**
+   * Calculates the sample variance from the argument array.
+   *
+   * @param {number[]} numArray - An array of numbers.
+   * @returns {number} The sample variance.
+   */
+  sampleVariance(numArray) {
+    const mean = this.mean(numArray)
+    const squaredDifference = varianceCalculations.subtractMean(numArray, mean)
 
     return varianceCalculations.calculateSampleVariance(squaredDifference)
   }
 
+  /**
+   * Calculates the sample variance from the argument array.
+   *
+   * @param {number[]} numArray - An array of numbers.
+   * @returns {number} The standard deviation.
+   */
   standardDeviation(numArray) {
 
   }
@@ -32,7 +52,7 @@ class advancedStatistics extends Statistics {
   range(numArray) {
     const sortedArray = this.sortByAscending(numArray)
 
-    const smallestNumber = sortedArray[0], biggestNumber = sortedArray[sortedArray.length-1]
+    const smallestNumber = sortedArray[0], biggestNumber = sortedArray[sortedArray.length - 1]
     return [smallestNumber, biggestNumber]
   }
 
