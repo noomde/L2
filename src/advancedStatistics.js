@@ -1,5 +1,6 @@
 import { Statistics } from './Statistics.js'
 import { modeCalculations } from './calculations/modeCalculations.js'
+import { varianceCalculations } from './calculations/varianceCalculations.js'
 
 /**
  * Statistical math helper, extends statistics.
@@ -7,11 +8,15 @@ import { modeCalculations } from './calculations/modeCalculations.js'
 class advancedStatistics extends Statistics {
 
   populationVariance(numArray) {
+    const squaredDifference = varianceCalculations.subtractMean(varianceCalculations.squareDifference())
 
+    return this.mean(squaredDifference)
   }
 
   sampleVariance() {
+    const squaredDifference = varianceCalculations.subtractMean(varianceCalculations.squareDifference())
 
+    return varianceCalculations.calculateSampleVariance(squaredDifference)
   }
 
   standardDeviation(numArray) {

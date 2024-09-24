@@ -6,7 +6,7 @@ export class varianceCalculations {
    * @param {number} mean - The mean of numArray.
    * @returns 
    */
-  subtractMean(numArray, mean) {
+  static subtractMean(numArray, mean) {
     let numArrayCopy = [...numArray]
     for (let i = 0; i < numArrayCopy.length; i++) {
       numArrayCopy[i] - mean
@@ -14,7 +14,7 @@ export class varianceCalculations {
     return numArrayCopy
   }
 
-  squareDifference(numArray) {
+  static squareDifference(numArray) {
     let numArrayCopy = [...numArray]
     for (let i = 0; i < numArrayCopy.length; i++) {
       numArrayCopy[i] ** 2
@@ -22,7 +22,7 @@ export class varianceCalculations {
     return numArrayCopy
   }
 
-  calculateSampleVariance(numArray) {
+  static calculateSampleVariance(numArray) {
     let divident
     for (let number of numArray) {
       divident += number
