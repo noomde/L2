@@ -23,10 +23,10 @@ export class varianceCalculations {
   }
 
   calculateSampleVariance(numArray) {
-
-  }
-
-  calculatePopulationVariance(numArray) {
-
+    let divident
+    for (let number of numArray) {
+      divident += number
+    }
+    return divident / (numArray.length - 1)
   }
 }

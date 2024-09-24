@@ -49,11 +49,11 @@ export class Statistics {
    * @returns {number} - The mean of all numbers from the argument.
    */
   mean(numArray) {
-    let result
+    let divident
     for (let number of numArray) {
-      result += number
+      divident += number
     }
-    return result / numArray.length
+    return divident / numArray.length
   }
 
   /**
