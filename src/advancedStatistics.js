@@ -1,5 +1,5 @@
 import { Statistics } from './Statistics.js'
-import { modeCalculations } from './modeCalculations.js'
+import { modeCalculations } from './calculations/modeCalculations.js'
 
 /**
  * Statistical math helper, extends statistics.
@@ -11,7 +11,7 @@ class advancedStatistics extends Statistics {
   }
 
   sampleVariance() {
-    
+
   }
 
   standardDeviation(numArray) {
