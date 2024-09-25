@@ -15,7 +15,7 @@ class advancedStatistics extends Statistics {
    */
   populationVariance(numArray) {
     const mean = this.mean(numArray)
-    const squaredDifference = varianceCalculations.subtractMean(numArray, mean)
+    const squaredDifference = varianceCalculations.squareAndSubtractDifference(numArray, mean)
 
     return this.mean(squaredDifference)
   }
@@ -28,7 +28,7 @@ class advancedStatistics extends Statistics {
    */
   sampleVariance(numArray) {
     const mean = this.mean(numArray)
-    const squaredDifference = varianceCalculations.subtractMean(numArray, mean)
+    const squaredDifference = varianceCalculations.squareAndSubtractDifference(numArray, mean)
 
     return varianceCalculations.calculateSampleVariance(squaredDifference)
   }
@@ -39,8 +39,18 @@ class advancedStatistics extends Statistics {
    * @param {number[]} numArray - An array of numbers.
    * @returns {number} The standard deviation.
    */
-  standardDeviation(numArray) {
+  sampleStandardDeviation(numArray) {
+    return Math.sqrt(this.sampleVariance(numArray))
+  }
 
+  /**
+   * Calculates the population variance from the argument array.
+   *
+   * @param {number[]} numArray - An array of numbers.
+   * @returns {number} The standard deviation.
+   */
+  populationStandardDeviation(numArray) {
+    return Math.sqrt(this.populationVariance(numArray))
   }
 
   /**
