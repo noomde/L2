@@ -1,4 +1,4 @@
-export class varianceCalculations {
+export class VarianceCalculations {
   /**
    * Subtracts the arguments mean from each number.
    *

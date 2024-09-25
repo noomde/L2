@@ -1,7 +1,7 @@
 /**
  * Used to check inputs for the main class.
  */
-export class checkInput {
+export class ValidateInput {
 
   /**
   * Checks every value in the array to ensure they are numbers.

@@ -1,7 +1,7 @@
 /**
  * A utility class for mode calculations.
  */
-export class modeCalculations {
+export class ModeCalculations {
   /**
    * Updates the count of how many times a number appears in the array.
    *

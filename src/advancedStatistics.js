@@ -1,11 +1,11 @@
 import { Statistics } from './Statistics.js'
-import { modeCalculations } from './calculations/modeCalculations.js'
-import { varianceCalculations } from './calculations/varianceCalculations.js'
+import { ModeCalculations } from './calculations/modeCalculations.js'
+import { VarianceCalculations } from './calculations/varianceCalculations.js'
 
 /**
  * Statistical math helper, extends statistics.
  */
-class advancedStatistics extends Statistics {
+class AdvancedStatistics extends Statistics {
 
   /**
    * Calculates the population variance from the argument array.
@@ -15,7 +15,7 @@ class advancedStatistics extends Statistics {
    */
   populationVariance(numArray) {
     const mean = this.mean(numArray)
-    const squaredDifference = varianceCalculations.squareAndSubtractDifference(numArray, mean)
+    const squaredDifference = VarianceCalculations.squareAndSubtractDifference(numArray, mean)
 
     return this.mean(squaredDifference)
   }
@@ -28,9 +28,9 @@ class advancedStatistics extends Statistics {
    */
   sampleVariance(numArray) {
     const mean = this.mean(numArray)
-    const squaredDifference = varianceCalculations.squareAndSubtractDifference(numArray, mean)
+    const squaredDifference = VarianceCalculations.squareAndSubtractDifference(numArray, mean)
 
-    return varianceCalculations.calculateSampleVariance(squaredDifference)
+    return VarianceCalculations.calculateSampleVariance(squaredDifference)
   }
 
   /**
@@ -63,7 +63,7 @@ class advancedStatistics extends Statistics {
     const sortedArray = this.sortByAscending(numArray)
 
     const smallestNumber = sortedArray[0], biggestNumber = sortedArray[sortedArray.length - 1]
-    return [smallestNumber, biggestNumber]
+    return biggestNumber - smallestNumber
   }
 
   /**
@@ -80,9 +80,9 @@ class advancedStatistics extends Statistics {
     for (let i = 0; i < numArray.length; i++) {
       let number = numArray[i]
 
-      modeCalculations.updateModeCount(modeMap, number)
+      ModeCalculations.updateModeCount(modeMap, number)
 
-      result = modeCalculations.updateMaxMode(modeMap, number, maximumCount)
+      result = ModeCalculations.updateMaxMode(modeMap, number, maximumCount)
     }
     if (result === undefined) {
       return 'No mode available'
