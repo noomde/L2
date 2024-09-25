@@ -69,7 +69,13 @@ class CalculationGuide extends Statistics {
    * @returns {object} - A object with the definition and steps to calculate mode.
    */
   modeGuide() {
-
+    return {
+      definition: 'The mode is the most frequent number in a set of numbers. This number can be more than 1.',
+      steps: [
+        'Count how many times each number appears.',
+        'The number/numbers that appears most is the mode.'
+      ]
+    }
   }
 
   /**
