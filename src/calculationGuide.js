@@ -23,7 +23,7 @@ class CalculationGuide extends Statistics {
    */
   medianGuide() {
     return {
-      definition: 'The middle number in an ordered set of numbers. If the set is an even amount, the median is the average of the 2 middle numbers.',
+      definition: 'The median is the middle number in an ordered set of numbers. If the set is an even amount, the median is the average of the 2 middle numbers.',
       steps: [
         'Sort the numbers from smallest to biggest or biggest to smallest.',
         'The median number is the number in the middle. If it is an even amount then the median is the average of the 2 middle numbers.'
@@ -37,7 +37,15 @@ class CalculationGuide extends Statistics {
    * @returns {object} - A object with the definition and steps to calculate variance.
    */
   varianceGuide() {
-
+    return {
+      definition: 'Variance is the measurment to see how far each numbers are from the mean.',
+      steps: [
+        'Calculate the mean from the set of numbers.', 
+        'Subtract the mean from each number.',
+        'Square each new number.',
+        'Calculate the mean with these new numbers. If you want to calculate population variance just do it normally otherwise the divisor needs to be -1.'
+      ]
+    }
   }
 
   /**
