@@ -84,6 +84,11 @@ class CalculationGuide extends Statistics {
    * @returns {object} - A object with the definition and steps to calculate range.
    */
   rangeGuide() {
-
+    return {
+      definition: 'The range is the difference between the biggest and the smallest number in a set of numbers.',
+      steps: [
+        'Subtract the smallest number from the biggest number.'
+      ]
+    }
   }
 }
