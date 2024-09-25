@@ -54,7 +54,13 @@ class CalculationGuide extends Statistics {
    * @returns {object} - A object with the definition and steps to calculate standard deviation.
    */
   standardDeviationGuide() {
-
+    return {
+      definition: 'Standard deviation is the measure to see how far each numbers are from the mean. However compared to variance this is the squared root of the number.',
+      steps: [
+        'Calculate the variance.',
+        'square root the variance number.'
+      ]
+    }
   }
 
   /**
