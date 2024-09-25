@@ -17,7 +17,7 @@ class CalculationGuide extends Statistics {
   }
 
   /**
-   *  Gives the user a median guide.
+   * Gives the user a median guide.
    *
    * @returns {object} - A object with the definition and steps to calculate median.
    */
@@ -31,18 +31,38 @@ class CalculationGuide extends Statistics {
     }
   }
 
+  /**
+   * Gives the user a variance guide.
+   *
+   * @returns {object} - A object with the definition and steps to calculate variance.
+   */
   varianceGuide() {
 
   }
 
+  /**
+   * Gives the user a standard deviation guide.
+   *
+   * @returns {object} - A object with the definition and steps to calculate standard deviation.
+   */
   standardDeviationGuide() {
 
   }
 
+  /**
+   * Gives the user a mode guide.
+   *
+   * @returns {object} - A object with the definition and steps to calculate mode.
+   */
   modeGuide() {
 
   }
 
+  /**
+   * Gives the user a range guide.
+   *
+   * @returns {object} - A object with the definition and steps to calculate range.
+   */
   rangeGuide() {
 
   }
