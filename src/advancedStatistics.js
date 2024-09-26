@@ -1,6 +1,7 @@
 import { Statistics } from './Statistics.js'
 import { ModeCalculations } from './calculations/modeCalculations.js'
 import { VarianceCalculations } from './calculations/varianceCalculations.js'
+import { ValidateInput } from './validation/validateInput.js'
 
 /**
  * Statistical math helper, extends statistics.
@@ -14,6 +15,7 @@ class AdvancedStatistics extends Statistics {
    * @returns {number} The population variance.
    */
   populationVariance(numArray) {
+    ValidateInput.checkInput(numArray)
     const mean = this.mean(numArray)
     const squaredDifference = VarianceCalculations.squareAndSubtractDifference(numArray, mean)
 
@@ -27,6 +29,7 @@ class AdvancedStatistics extends Statistics {
    * @returns {number} The sample variance.
    */
   sampleVariance(numArray) {
+    ValidateInput.checkInput(numArray)
     const mean = this.mean(numArray)
     const squaredDifference = VarianceCalculations.squareAndSubtractDifference(numArray, mean)
 
@@ -40,6 +43,7 @@ class AdvancedStatistics extends Statistics {
    * @returns {number} The standard deviation.
    */
   sampleStandardDeviation(numArray) {
+    ValidateInput.checkInput(numArray)
     return Math.sqrt(this.sampleVariance(numArray))
   }
 
@@ -50,6 +54,7 @@ class AdvancedStatistics extends Statistics {
    * @returns {number} The standard deviation.
    */
   populationStandardDeviation(numArray) {
+    ValidateInput.checkInput(numArray)
     return Math.sqrt(this.populationVariance(numArray))
   }
 
@@ -60,6 +65,7 @@ class AdvancedStatistics extends Statistics {
    * @returns {Array} - Returns the range from the argument array.
    */
   range(numArray) {
+    ValidateInput.checkInput(numArray)
     const sortedArray = this.sortByAscending(numArray)
 
     const smallestNumber = sortedArray[0], biggestNumber = sortedArray[sortedArray.length - 1]
@@ -73,6 +79,7 @@ class AdvancedStatistics extends Statistics {
    * @returns {number} - The mode from the argument array.
    */
   mode(numArray) {
+    ValidateInput.checkInput(numArray)
     let modeMap = {}
     let maximumCount = 0
     let result

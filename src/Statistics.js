@@ -25,6 +25,7 @@ export class Statistics {
    * @returns {number[]} - The sorted array from biggest to smallest.
    */
   sortByDescending(numArray) {
+    ValidateInput.checkInput(numArray)
     return [...numArray].sort((x, y) => y - x)
   }
 
@@ -35,6 +36,7 @@ export class Statistics {
    * @returns {number[]} - The sorted array from smallest to biggest.
    */
   sortByAscending(numArray) {
+    ValidateInput.checkInput(numArray)
     return [...numArray].sort((x, y) => x - y)
   }
 
@@ -60,6 +62,7 @@ export class Statistics {
    * @returns {number} - The median of all numbers from the argument.
    */
   median(numArray) {
+    ValidateInput.checkInput(numArray)
     const sortedArray = this.sortByAscending(numArray)
     const middleOfArray = Math.floor(sortedArray.length / 2)
 
@@ -76,6 +79,7 @@ export class Statistics {
    * @returns {number[]} - An array where each number represents its proportion of the total sum as a decimal.
    */
   convertToDecimal(numArray) {
+    ValidateInput.checkInput(numArray)
     const sumOfArray = this.sum(numArray)
     let result = []
 
@@ -92,6 +96,7 @@ export class Statistics {
    * @returns {number[]} - An array where each number represents its proportion of the total sum as a percentage string.
    */
   convertToPercentage(numArray) {
+    ValidateInput.checkInput(numArray)
     let decimalArray = this.convertToDecimal(numArray)
     let result = []
 
