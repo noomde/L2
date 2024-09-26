@@ -1,6 +1,4 @@
-import { Statistics } from './Statistics.js'
-
-class CalculationGuide extends Statistics {
+class CalculationGuide {
   /**
    * Gives the user a mean guide.
    *

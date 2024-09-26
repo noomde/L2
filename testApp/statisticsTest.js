@@ -53,3 +53,54 @@ testArrays.forEach(test => {
     console.error('\x1b[31mERROR:', error.message, '\x1b[0m')
   }
 })
+
+console.log('\nSum')
+console.log('===================')
+testArrays.forEach(test => {
+  try {
+    console.log(stat.sum(test.data))
+  } catch (error) {
+    console.error('\x1b[31mERROR:', error.message, '\x1b[0m')
+  }
+})
+
+console.log('\nConvert to Decimal')
+console.log('===================')
+testArrays.forEach(test => {
+  try {
+    console.log(stat.convertToDecimal(test.data))
+  } catch (error) {
+    console.error('\x1b[31mERROR:', error.message, '\x1b[0m')
+  }
+})
+
+console.log('\nConvert to Percentage')
+console.log('===================')
+testArrays.forEach(test => {
+  try {
+    console.log(stat.convertToPercentage(test.data))
+  } catch (error) {
+    console.error('\x1b[31mERROR:', error.message, '\x1b[0m')
+  }
+})
+
+console.log('\nPopulation variance')
+console.log('===================')
+testArrays.forEach(test => {
+  try {
+    console.log(stat.(test.data))
+  } catch (error) {
+    console.error('\x1b[31mERROR:', error.message, '\x1b[0m')
+  }
+})
+
+console.log('\nSample variance')
+console.log('===================')
+testArrays.forEach(test => {
+  try {
+    console.log(stat.convertToPercentage(test.data))
+  } catch (error) {
+    console.error('\x1b[31mERROR:', error.message, '\x1b[0m')
+  }
+})
+
