@@ -33,3 +33,23 @@ testArrays.forEach(test => {
     console.error('\x1b[31mERROR:', error.message, '\x1b[0m')
   }
 })
+
+console.log('\nSort By Ascending')
+console.log('===================')
+testArrays.forEach(test => {
+  try {
+    console.log(stat.sortByAscending(test.data))
+  } catch (error) {
+    console.error('\x1b[31mERROR:', error.message, '\x1b[0m')
+  }
+})
+
+console.log('\nSort By descending')
+console.log('===================')
+testArrays.forEach(test => {
+  try {
+    console.log(stat.sortByDescending(test.data))
+  } catch (error) {
+    console.error('\x1b[31mERROR:', error.message, '\x1b[0m')
+  }
+})
