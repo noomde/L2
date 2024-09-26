@@ -57,6 +57,14 @@ export class Statistics {
     return divident / numArray.length
   }
 
+  geometricMean(numArray) {
+
+  }
+
+  harmonicMean(numArray) {
+
+  }
+
   /**
    * Calculates the median from the arguments array.
    *
@@ -195,5 +203,13 @@ export class Statistics {
       return 'No mode available'
     }
     return result
+  }
+
+  quartiles(numArray) {
+
+  }
+
+  interquartileRange(numArray) {
+    
   }
 }
