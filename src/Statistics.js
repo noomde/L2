@@ -1,9 +1,4 @@
-// Noticed just now that there are alot of similiar npm packagages so to make mine more unique it will make the calculations and be able to explain how to make these kind of calculations yuorself.
-// I will also try to add a very good system for checking the correct input.
-// This way my module will allow you to make these calculations while learning the process of it.
-// So kinda like an educational tool. This could be built into some kind of positive math learning app.
-// I kinda want it to have the possibility to show percentage of and decimal values aswell kinda like in an answer cheat.
-
+import { ValidateInput } from './validation/validateInput.js'
 /**
  * Statistical math class.
  */
@@ -15,7 +10,8 @@ export class Statistics {
    * @returns {number} - The sum of all numbers from the argument.
    */
   sum(numArray) {
-    let result
+    ValidateInput.checkInput(numArray)
+    let result = 0
     for (let i = 0; i < numArray.length; i++) {
       result += numArray[i]
     }
@@ -49,7 +45,8 @@ export class Statistics {
    * @returns {number} - The mean of all numbers from the argument.
    */
   mean(numArray) {
-    let divident
+    ValidateInput.checkInput(numArray)
+    let divident = 0
     for (let number of numArray) {
       divident += number
     }

@@ -3,9 +3,10 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "dev": "vite",
-    "start": "node src/index.html",
+    "start": "node testApp/statisticsTest.js",
     "build": "vite build",
     "serve": "vite preview",
     "lint": "npx eslint /src || exit 0",
