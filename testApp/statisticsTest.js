@@ -5,7 +5,8 @@ const testArrays = [
   { name: 'arraySingle', data: [6] },
   { name: 'arrayObject', data: [2, 3, 6, 1, 8, 2, {}] },
   { name: 'arrayString', data: [2, 5, 3, 'hejsan', 2, 7] },
-  { name: 'arrayBoolean', data: [2, 5, 2, 1, 6, undefined, 8] }
+  { name: 'arrayBoolean', data: [2, 5, 2, 1, 6, undefined, 8] },
+  { name: 'arrayNaN', data: [2, 5, 8, 1, 9, 0, NaN, 3] }
 ]
 
 

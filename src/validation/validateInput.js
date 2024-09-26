@@ -12,16 +12,19 @@ export class ValidateInput {
   static #checkTypes(numArray) {
     for (let i = 0; i < numArray.length; i++) {
       if (typeof numArray[i] === 'string') {
-        throw new TypeError(`You have entered the type string on index ${i}. The argument can only handle the type number.`)
+        throw new TypeError(`You have entered the type string on index ${i}. The program can only handle the type number.`)
       }
       if (typeof numArray[i] === 'object') {
-        throw new TypeError(`You have entered the type object on index ${i}. The argument can only handle the type number.`)
+        throw new TypeError(`You have entered the type object on index ${i}. The program can only handle the type number.`)
       }
       if (typeof numArray[i] === 'boolean') {
-        throw new TypeError(`You have entered the type boolean on index ${i}. The argument can only handle the type number.`)
+        throw new TypeError(`You have entered the type boolean on index ${i}. The program can only handle the type number.`)
       }
       if (typeof numArray[i] === 'undefined') {
-        throw new TypeError(`You have entered the type undefined on index ${i}. The argument can only handle the type number.`)
+        throw new TypeError(`You have entered the type undefined on index ${i}. The program can only handle the type number.`)
+      }
+      if (isNaN(numArray[i])) {
+        throw new TypeError(`You have entered the type number NaN on index ${i}. The program can not handle Nan. Please remove Nan and try again.`)
       }
     }
   }
