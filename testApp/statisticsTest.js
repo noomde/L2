@@ -14,31 +14,11 @@ const testArrays = [
 
 const stat = new Statistics
 
-console.log('\nMean')
+console.log('\nSum')
 console.log('===================')
 testArrays.forEach(test => {
   try {
-    console.log(stat.mean(test.data))
-  } catch (error) {
-    console.error('\x1b[31mERROR:', error.message, '\x1b[0m')
-  }
-})
-
-console.log('\nMedian')
-console.log('===================')
-testArrays.forEach(test => {
-  try {
-    console.log(stat.median(test.data))
-  } catch (error) {
-    console.error('\x1b[31mERROR:', error.message, '\x1b[0m')
-  }
-})
-
-console.log('\nSort By Ascending')
-console.log('===================')
-testArrays.forEach(test => {
-  try {
-    console.log(stat.sortByAscending(test.data))
+    console.log(stat.sum(test.data))
   } catch (error) {
     console.error('\x1b[31mERROR:', error.message, '\x1b[0m')
   }
@@ -54,11 +34,51 @@ testArrays.forEach(test => {
   }
 })
 
-console.log('\nSum')
+console.log('\nSort By Ascending')
 console.log('===================')
 testArrays.forEach(test => {
   try {
-    console.log(stat.sum(test.data))
+    console.log(stat.sortByAscending(test.data))
+  } catch (error) {
+    console.error('\x1b[31mERROR:', error.message, '\x1b[0m')
+  }
+})
+
+console.log('\nMean')
+console.log('===================')
+testArrays.forEach(test => {
+  try {
+    console.log(stat.mean(test.data))
+  } catch (error) {
+    console.error('\x1b[31mERROR:', error.message, '\x1b[0m')
+  }
+})
+
+console.log('\nGeometric mean')
+console.log('===================')
+testArrays.forEach(test => {
+  try {
+    console.log(stat.mean(test.data))
+  } catch (error) {
+    console.error('\x1b[31mERROR:', error.message, '\x1b[0m')
+  }
+})
+
+console.log('\nHarmonic mean')
+console.log('===================')
+testArrays.forEach(test => {
+  try {
+    console.log(stat.median(test.data))
+  } catch (error) {
+    console.error('\x1b[31mERROR:', error.message, '\x1b[0m')
+  }
+})
+
+console.log('\nMedian')
+console.log('===================')
+testArrays.forEach(test => {
+  try {
+    console.log(stat.median(test.data))
   } catch (error) {
     console.error('\x1b[31mERROR:', error.message, '\x1b[0m')
   }
@@ -84,11 +104,21 @@ testArrays.forEach(test => {
   }
 })
 
+console.log('\nRange')
+console.log('===================')
+testArrays.forEach(test => {
+  try {
+    console.log(stat.range(test.data))
+  } catch (error) {
+    console.error('\x1b[31mERROR:', error.message, '\x1b[0m')
+  }
+})
+
 console.log('\nPopulation variance')
 console.log('===================')
 testArrays.forEach(test => {
   try {
-    console.log(stat.(test.data))
+    console.log(stat.populationVariance(test.data))
   } catch (error) {
     console.error('\x1b[31mERROR:', error.message, '\x1b[0m')
   }
@@ -98,9 +128,58 @@ console.log('\nSample variance')
 console.log('===================')
 testArrays.forEach(test => {
   try {
-    console.log(stat.convertToPercentage(test.data))
+    console.log(stat.sampleVariance(test.data))
   } catch (error) {
     console.error('\x1b[31mERROR:', error.message, '\x1b[0m')
   }
 })
 
+console.log('\nSample standard deviation')
+console.log('===================')
+testArrays.forEach(test => {
+  try {
+    console.log(stat.sampleStandardDeviation(test.data))
+  } catch (error) {
+    console.error('\x1b[31mERROR:', error.message, '\x1b[0m')
+  }
+})
+
+console.log('\nPopulation standard deviation')
+console.log('===================')
+testArrays.forEach(test => {
+  try {
+    console.log(stat.populationStandardDeviation(test.data))
+  } catch (error) {
+    console.error('\x1b[31mERROR:', error.message, '\x1b[0m')
+  }
+})
+
+console.log('\nMode')
+console.log('===================')
+testArrays.forEach(test => {
+  try {
+    console.log(stat.mode(test.data))
+  } catch (error) {
+    console.error('\x1b[31mERROR:', error.message, '\x1b[0m')
+  }
+})
+
+console.log('\nQuartiles')
+console.log('===================')
+testArrays.forEach(test => {
+  try {
+    console.log(stat.quartiles(test.data))
+  } catch (error) {
+    console.error('\x1b[31mERROR:', error.message, '\x1b[0m')
+  }
+})
+
+console.log('\nInterquartile Range')
+console.log('===================')
+testArrays.forEach(test => {
+  try {
+    console.log(stat.interquartileRange(test.data))
+  } catch (error) {
+    console.error('\x1b[31mERROR:', error.message, '\x1b[0m')
+  }
+})

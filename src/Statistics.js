@@ -57,12 +57,37 @@ export class Statistics {
     return divident / numArray.length
   }
 
+  /**
+   * Calculates the geometric mean from the arguments array.
+   *
+   * @param {number[]} numArray - An array of numbers.
+   * @returns {number} - The geometric mean of all numbers from the argument.
+   */
   geometricMean(numArray) {
-
+    ValidateInput.checkInput(numArray)
+    let multNumbers = 0
+    for (let number of numArray) {
+      multNumbers *= number
+    }
+    return Math.cbrt(multNumbers)
   }
 
+  /**
+   * Calculates the harmonic mean from the arguments array.
+   *
+   * @param {number[]} numArray - An array of numbers.
+   * @returns {number} - The harmonic mean of all numbers from the argument.
+   */
   harmonicMean(numArray) {
-
+    ValidateInput.checkInput(numArray)
+    if (numArray.includes(0)) {
+      throw new Error('Harmonic mean can not include and zeros.')
+    }
+    let reciprocal = 0
+    for (let number of numArray) {
+      reciprocal += (1 / number)
+    }
+    return numArray.length / reciprocal
   }
 
   /**
@@ -122,14 +147,14 @@ export class Statistics {
    * @param {number[]} numArray - An array of numbers.
    * @returns {Array} - Returns the range from the argument array.
    */
-    range(numArray) {
-      ValidateInput.checkInput(numArray)
-      const sortedArray = this.sortByAscending(numArray)
-  
-      const smallestNumber = sortedArray[0], biggestNumber = sortedArray[sortedArray.length - 1]
-      return biggestNumber - smallestNumber
-    }
-    
+  range(numArray) {
+    ValidateInput.checkInput(numArray)
+    const sortedArray = this.sortByAscending(numArray)
+
+    const smallestNumber = sortedArray[0], biggestNumber = sortedArray[sortedArray.length - 1]
+    return biggestNumber - smallestNumber
+  }
+
   /**
    * Calculates the population variance from the argument array.
    *
@@ -205,11 +230,36 @@ export class Statistics {
     return result
   }
 
+  /**
+   * Calculates the median in the 1st and 3rd quartile from the arguments array.
+   *
+   * @param {number[]} numArray - An array of numbers.
+   * @returns {number} - The quartile median.
+   */
   quartiles(numArray) {
+    ValidateInput.checkInput(numArray)
+    const sortedArray = this.sortByAscending(numArray)
+    const middleOfArray = Math.floor(sortedArray.length / 2)
+    let Q3 = 0
 
+    const Q1 = sortedArray.slice(0, middleOfArray)
+    if (sortedArray.length % 2 === 0) {
+      Q3 = sortedArray.slice(middleOfArray)
+    } else {
+      Q3 = sortedArray.slice(middleOfArray + 1)
+    }
+    return [this.median(Q1), this.median(Q3)]
   }
 
+  /**
+   * Calculates the range between the quartiles median from the arguments array.
+   *
+   * @param {number[]} numArray - An array of numbers.
+   * @returns {number} - The interquartile range.
+   */
   interquartileRange(numArray) {
-    
+    ValidateInput.checkInput(numArray)
+    const [Q1, Q3] = this.quartiles(numArray)
+    return Q3 - Q1
   }
 }
