@@ -75,7 +75,7 @@ console.log('\nGeometric mean')
 console.log('===================')
 testArrays.forEach(test => {
   try {
-    console.log(stat.mean(test.data))
+    console.log(stat.geometricMean(test.data))
   } catch (error) {
     console.error('\x1b[31mERROR:', error.message, '\x1b[0m')
   }
@@ -85,7 +85,7 @@ console.log('\nHarmonic mean')
 console.log('===================')
 testArrays.forEach(test => {
   try {
-    console.log(stat.median(test.data))
+    console.log(stat.harmonicMean(test.data))
   } catch (error) {
     console.error('\x1b[31mERROR:', error.message, '\x1b[0m')
   }

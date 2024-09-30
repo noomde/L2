@@ -65,11 +65,11 @@ export class Statistics {
    */
   geometricMean(numArray) {
     ValidateInput.checkInput(numArray)
-    let multNumbers = 0
+    let multipliedNumbers = 1
     for (let number of numArray) {
-      multNumbers *= number
+      multipliedNumbers *= number
     }
-    return Math.cbrt(multNumbers)
+    return Math.pow(multipliedNumbers, 1 / numArray.length)
   }
 
   /**

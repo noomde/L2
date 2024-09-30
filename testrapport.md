@@ -1,3 +1,5 @@
+# Tests 9/30/2024
+
 # Tests for Validation
 
 ## TC1.1
@@ -121,3 +123,20 @@
 ### TC4.1 fail
 
 ### TC4.2 fail
+
+### Comment: It failed because I initialised the number getting multiplied to 0 and I called for the wrong method in the test.
+
+
+# Tests for Harmonic mean
+
+## TC5.1
+### Test with array containing numbers
+
+## TC5.2
+### Test with array containing 2 number
+
+# Test Results
+
+### TC5.1 PASS
+
+### TC5.2 PASS
