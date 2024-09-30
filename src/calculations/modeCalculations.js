@@ -29,6 +29,5 @@ export class ModeCalculations {
       maximumCount = modeMap[number]
       return [number, maximumCount]
     }
-    return undefined
   }
 }

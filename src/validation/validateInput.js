@@ -41,8 +41,8 @@ export class ValidateInput {
   static checkInput(numArray) {
     if (!Array.isArray(numArray)) {
       throw new TypeError('The argument needs to be an Array.')
-    } else if (numArray.length <= 1) {
-      throw new TypeError('The argument can not contain only 1 number or be empty')
+    } else if (numArray.length === 0) {
+      throw new TypeError('The argument can not be empty')
     }
     this.#checkTypes(numArray)
   }

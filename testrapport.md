@@ -275,3 +275,33 @@
 ### TC16.1 FAIL
 
 ### TC16.2 FAIL
+
+
+# Tests for Quartiles
+
+## TC17.1
+### Test with array containing numbers
+
+## TC17.2
+### Test with array containing 2 number
+
+# Test Results
+
+### TC17.1 PASS
+
+### TC17.2 FAIL
+
+
+# Tests for Interquartile range
+
+## TC18.1
+### Test with array containing numbers
+
+## TC18.2
+### Test with array containing 2 number
+
+# Test Results
+
+### TC18.1 PASS
+
+### TC18.2 FAIL

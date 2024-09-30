@@ -1,6 +1,7 @@
 import { ValidateInput } from './validation/validateInput.js'
 import { ModeCalculations } from './calculations/modeCalculations.js'
 import { VarianceCalculations } from './calculations/varianceCalculations.js'
+import { getUpperQuartile } from './calculations/quartileCalculations.js'
 /**
  * Statistical math class.
  */
@@ -242,16 +243,13 @@ export class Statistics {
    */
   quartiles(numArray) {
     ValidateInput.checkInput(numArray)
-    const sortedArray = this.sortByAscending(numArray)
-    const middleOfArray = Math.floor(sortedArray.length / 2)
-    let Q3 = 0
-
-    const Q1 = sortedArray.slice(0, middleOfArray)
-    if (sortedArray.length % 2 === 0) {
-      Q3 = sortedArray.slice(middleOfArray)
-    } else {
-      Q3 = sortedArray.slice(middleOfArray + 1)
+    if (numArray.length === 1) {
+      throw new Error('The quartiles length can not be 1 or shorter.')
     }
+    const sortedArray = this.sortByAscending(numArray)
+
+    const Q1 = sortedArray.slice(0,  Math.floor(sortedArray.length / 2))
+    const Q3 = getUpperQuartile(sortedArray)
     return [this.median(Q1), this.median(Q3)]
   }
 
