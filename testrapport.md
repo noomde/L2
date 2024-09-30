@@ -112,31 +112,166 @@
 
 # Tests for Geometric mean
 
-## TC4.1
+## TC6.1
 ### Test with array containing numbers
 
-## TC4.2
+## TC6.2
 ### Test with array containing 2 number
 
 # Test Results
 
-### TC4.1 fail
+### TC6.1 fail
 
-### TC4.2 fail
+### TC6.2 fail
 
 ### Comment: It failed because I initialised the number getting multiplied to 0 and I called for the wrong method in the test.
 
 
 # Tests for Harmonic mean
 
-## TC5.1
+## TC7.1
 ### Test with array containing numbers
 
-## TC5.2
+## TC7.2
 ### Test with array containing 2 number
 
 # Test Results
 
-### TC5.1 PASS
+### TC7.1 PASS
 
-### TC5.2 PASS
+### TC7.2 PASS
+
+
+# Tests for Median
+
+## TC8.1
+### Test with array containing numbers
+
+## TC8.2
+### Test with array containing 2 number
+
+# Test Results
+
+### TC8.1 PASS
+
+### TC8.2 PASS
+
+
+# Tests for Convert to decimal
+
+## TC9.1
+### Test with array containing numbers
+
+## TC9.2
+### Test with array containing 2 number
+
+# Test Results
+
+### TC9.1 PASS
+
+### TC9.2 PASS
+
+
+# Tests for Convert to percentage
+
+## TC10.1
+### Test with array containing numbers
+
+## TC10.2
+### Test with array containing 2 number
+
+# Test Results
+
+### TC10.1 PASS
+
+### TC10.2 PASS
+
+
+# Tests for Range
+
+## TC11.1
+### Test with array containing numbers
+
+## TC11.2
+### Test with array containing 2 number
+
+# Test Results
+
+### TC11.1 PASS
+
+### TC11.2 PASS
+
+
+# Tests for Population variance
+
+## TC12.1
+### Test with array containing numbers
+
+## TC12.2
+### Test with array containing 2 number
+
+# Test Results
+
+### TC12.1 PASS
+
+### TC12.2 PASS
+
+
+# Tests for Sample variance
+
+## TC13.1
+### Test with array containing numbers
+
+## TC13.2
+### Test with array containing 2 number
+
+# Test Results
+
+### TC13.1 PASS
+
+### TC13.2 PASS
+
+
+# Tests for Sample standard deviation
+
+## TC14.1
+### Test with array containing numbers
+
+## TC14.2
+### Test with array containing 2 number
+
+# Test Results
+
+### TC14.1 PASS
+
+### TC14.2 PASS
+
+
+# Tests for Population standard deviation
+
+## TC15.1
+### Test with array containing numbers
+
+## TC15.2
+### Test with array containing 2 number
+
+# Test Results
+
+### TC15.1 PASS
+
+### TC15.2 PASS
+
+
+# Tests for Mode
+
+## TC16.1
+### Test with array containing numbers
+
+## TC16.2
+### Test with array containing 2 number
+
+# Test Results
+
+### TC16.1 FAIL
+
+### TC16.2 FAIL
