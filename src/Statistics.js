@@ -222,7 +222,11 @@ export class Statistics {
 
       ModeCalculations.updateModeCount(modeMap, number)
 
-      result = ModeCalculations.updateMaxMode(modeMap, number, maximumCount)
+      const modeValues = ModeCalculations.updateMaxMode(modeMap, number, maximumCount)
+
+      if (modeValues !== undefined) {
+        [result, maximumCount] = modeValues
+      }
     }
     if (result === undefined) {
       return 'No mode available'

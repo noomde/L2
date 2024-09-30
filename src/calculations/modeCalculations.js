@@ -27,7 +27,7 @@ export class ModeCalculations {
   static updateMaxMode(modeMap, number, maximumCount) {
     if (modeMap[number] > maximumCount) {
       maximumCount = modeMap[number]
-      return number
+      return [number, maximumCount]
     }
     return undefined
   }
