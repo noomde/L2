@@ -1,8 +1,10 @@
 import { Statistics } from '../src/Statistics.js'
+import { ValidateInput } from '../src/validation/validateInput.js'
 
-const testArrays = [
+const testArraysValidate = [
   { name: 'array', data: [5, 2, 7, 1, 9, 7, 3, 5, 8, 2, 4, 6, 12] },
   { name: 'arraySingle', data: [6] },
+  { name: 'arraySingle', data: [6, 7] },
   { name: 'arrayObject', data: [2, 3, 6, 1, 8, 2, {}] },
   { name: 'arrayString', data: [2, 5, 3, 'hejsan', 2, 7] },
   { name: 'arrayBoolean', data: [2, 5, 2, 1, 6, undefined, 8] },
@@ -12,7 +14,22 @@ const testArrays = [
 ]
 
 
+const testArrays = [
+  { name: 'array', data: [5, 2, 7, 1, 9, 7, 3, 5, 8, 2, 4, 6, 12] },
+  { name: 'arraySingle', data: [6, 7] }
+]
+
 const stat = new Statistics
+
+console.log('\nValidation')
+console.log('===================')
+testArraysValidate.forEach(test => {
+  try {
+    console.log(ValidateInput.checkInput(test.data))
+  } catch (error) {
+    console.error('\x1b[31mERROR:', error.message, '\x1b[0m')
+  }
+})
 
 console.log('\nSum')
 console.log('===================')
