@@ -305,3 +305,57 @@
 ### TC18.1 PASS
 
 ### TC18.2 FAIL
+
+
+# Tests 9/30/2024 SECOND TESTS
+
+
+# Tests for Geometric mean
+
+## TC6.1
+### Test with array containing numbers
+
+## TC6.2
+### Test with array containing 2 number
+
+# Test Results
+
+### TC6.1 PASS
+
+### TC6.2 PASS
+
+### TC6.3 PASS
+
+
+# Tests for Quartiles
+
+## TC17.1
+### Test with array containing numbers
+
+## TC17.2
+### Test with array containing 2 number
+
+# Test Results
+
+### TC17.1 PASS
+
+### TC17.2 PASS
+
+### TC17.3 PASS
+
+
+# Tests for Interquartile range
+
+## TC18.1
+### Test with array containing numbers
+
+## TC18.2
+### Test with array containing 2 number
+
+# Test Results
+
+### TC18.1 PASS
+
+### TC18.2 PASS
+
+### TC18.3 PASS

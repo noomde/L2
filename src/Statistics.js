@@ -2,6 +2,7 @@ import { ValidateInput } from './validation/validateInput.js'
 import { ModeCalculations } from './calculations/modeCalculations.js'
 import { VarianceCalculations } from './calculations/varianceCalculations.js'
 import { getUpperQuartile } from './calculations/quartileCalculations.js'
+import { checkLength } from './validation/checkLength.js'
 /**
  * Statistical math class.
  */
@@ -178,6 +179,7 @@ export class Statistics {
    */
   sampleVariance(numArray) {
     ValidateInput.checkInput(numArray)
+    checkLength(numArray)
     const mean = this.mean(numArray)
     const squaredDifference = VarianceCalculations.squareAndSubtractDifference(numArray, mean)
 
@@ -192,6 +194,7 @@ export class Statistics {
    */
   sampleStandardDeviation(numArray) {
     ValidateInput.checkInput(numArray)
+    checkLength(numArray)
     return Math.sqrt(this.sampleVariance(numArray))
   }
 
@@ -243,9 +246,7 @@ export class Statistics {
    */
   quartiles(numArray) {
     ValidateInput.checkInput(numArray)
-    if (numArray.length === 1) {
-      throw new Error('The quartiles length can not be 1 or shorter.')
-    }
+    checkLength(numArray)
     const sortedArray = this.sortByAscending(numArray)
 
     const Q1 = sortedArray.slice(0,  Math.floor(sortedArray.length / 2))
