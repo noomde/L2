@@ -58,6 +58,66 @@
 
 # Test Results
 
-### TC1.1 PASS
+### TC2.1 PASS
 
-### TC1.2 PASS
+### TC2.2 PASS
+
+
+# Tests for Sort by descending
+
+## TC3.1
+### Test with array containing numbers
+
+## TC3.2
+### Test with array containing 2 number
+
+# Test Results
+
+### TC3.1 PASS
+
+### TC3.2 PASS
+
+
+# Tests for Sort by ascending
+
+## TC4.1
+### Test with array containing numbers
+
+## TC4.2
+### Test with array containing 2 number
+
+# Test Results
+
+### TC4.1 PASS
+
+### TC4.2 PASS
+
+
+# Tests for Mean
+
+## TC5.1
+### Test with array containing numbers
+
+## TC5.2
+### Test with array containing 2 number
+
+# Test Results
+
+### TC5.1 PASS
+
+### TC5.2 PASS
+
+
+# Tests for Geometric mean
+
+## TC4.1
+### Test with array containing numbers
+
+## TC4.2
+### Test with array containing 2 number
+
+# Test Results
+
+### TC4.1 fail
+
+### TC4.2 fail
