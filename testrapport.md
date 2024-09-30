@@ -4,125 +4,94 @@
 
 ## TC1.1
 ### Test with array containing numbers
+### PASS
 
 ## TC1.2
 ### Test with array containing 1 number
+### PASS
 
 ## TC1.3
 ### Test with array containing 1 number
+### PASS
 
 ## TC1.4
 ### Test with array containing numbers and an object
+### PASS
 
 ## TC1.5
 ### Test with array containing numbers and a string
+### PASS
 
 ## TC1.6
 ### Test with array containing numbers and an undefined
+### PASS
 
 ## TC1.7
-### Test with array containing numbers and a NaN
+### Test with array containing numbers and a NaN'
+### PASS
 
 ## TC1.8
 ### Test with an empty object
+### PASS
 
 ## TC1.9
 ### Test with an empty array
-
-# Test Results
-
-### TC1.1 PASS
-
-### TC1.2 PASS
-
-### TC1.3 PASS
-
-### TC1.4 PASS
-
-### TC1.5 PASS
-
-### TC1.6 PASS
-
-### TC1.7 PASS
-
-### TC1.8 PASS
-
-### TC1.9 PASS
+### PASS
 
 
 # Tests for Sum
 
 ## TC2.1
 ### Test with array containing numbers
+### PASS
 
 ## TC2.2
 ### Test with array containing 2 number
-
-# Test Results
-
-### TC2.1 PASS
-
-### TC2.2 PASS
+### PASS
 
 
 # Tests for Sort by descending
 
 ## TC3.1
 ### Test with array containing numbers
+### PASS
 
 ## TC3.2
 ### Test with array containing 2 number
-
-# Test Results
-
-### TC3.1 PASS
-
-### TC3.2 PASS
+### PASS
 
 
 # Tests for Sort by ascending
 
 ## TC4.1
 ### Test with array containing numbers
+### PASS
 
 ## TC4.2
 ### Test with array containing 2 number
-
-# Test Results
-
-### TC4.1 PASS
-
-### TC4.2 PASS
+### PASS
 
 
 # Tests for Mean
 
 ## TC5.1
 ### Test with array containing numbers
+### PASS
 
 ## TC5.2
 ### Test with array containing 2 number
-
-# Test Results
-
-### TC5.1 PASS
-
-### TC5.2 PASS
+### PASS
 
 
 # Tests for Geometric mean
 
 ## TC6.1
 ### Test with array containing numbers
+### FAIL
 
 ## TC6.2
 ### Test with array containing 2 number
-
-# Test Results
-
-### TC6.1 fail
-
-### TC6.2 fail
+### FAIL
 
 ### Comment: It failed because I initialised the number getting multiplied to 0 and I called for the wrong method in the test.
 
@@ -131,180 +100,136 @@
 
 ## TC7.1
 ### Test with array containing numbers
+### PASS
 
 ## TC7.2
 ### Test with array containing 2 number
-
-# Test Results
-
-### TC7.1 PASS
-
-### TC7.2 PASS
+### PASS
 
 
 # Tests for Median
 
 ## TC8.1
 ### Test with array containing numbers
+### PASS
 
 ## TC8.2
 ### Test with array containing 2 number
-
-# Test Results
-
-### TC8.1 PASS
-
-### TC8.2 PASS
+### PASS
 
 
 # Tests for Convert to decimal
 
 ## TC9.1
 ### Test with array containing numbers
+### PASS
 
 ## TC9.2
 ### Test with array containing 2 number
-
-# Test Results
-
-### TC9.1 PASS
-
-### TC9.2 PASS
+### PASS
 
 
 # Tests for Convert to percentage
 
 ## TC10.1
 ### Test with array containing numbers
+### PASS
 
 ## TC10.2
 ### Test with array containing 2 number
-
-# Test Results
-
-### TC10.1 PASS
-
-### TC10.2 PASS
+### PASS
 
 
 # Tests for Range
 
 ## TC11.1
 ### Test with array containing numbers
+### PASS
 
 ## TC11.2
 ### Test with array containing 2 number
-
-# Test Results
-
-### TC11.1 PASS
-
-### TC11.2 PASS
+### PASS
 
 
 # Tests for Population variance
 
 ## TC12.1
 ### Test with array containing numbers
+### PASS
 
 ## TC12.2
 ### Test with array containing 2 number
-
-# Test Results
-
-### TC12.1 PASS
-
-### TC12.2 PASS
+### PASS
 
 
 # Tests for Sample variance
 
 ## TC13.1
 ### Test with array containing numbers
+### PASS
 
 ## TC13.2
 ### Test with array containing 2 number
-
-# Test Results
-
-### TC13.1 PASS
-
-### TC13.2 PASS
+### PASS
 
 
 # Tests for Sample standard deviation
 
 ## TC14.1
 ### Test with array containing numbers
+### PASS
 
 ## TC14.2
 ### Test with array containing 2 number
-
-# Test Results
-
-### TC14.1 PASS
-
-### TC14.2 PASS
+### PASS
 
 
 # Tests for Population standard deviation
 
 ## TC15.1
 ### Test with array containing numbers
+### PASS
 
 ## TC15.2
 ### Test with array containing 2 number
-
-# Test Results
-
-### TC15.1 PASS
-
-### TC15.2 PASS
+### PASS
 
 
 # Tests for Mode
 
 ## TC16.1
 ### Test with array containing numbers
+### FAIL
 
 ## TC16.2
 ### Test with array containing 2 number
+### FAIL
 
-# Test Results
-
-### TC16.1 FAIL
-
-### TC16.2 FAIL
+### Comment: I forgot to return the maximum count from 1 of the calculation methods.
 
 
 # Tests for Quartiles
 
 ## TC17.1
 ### Test with array containing numbers
+### PASS
 
 ## TC17.2
 ### Test with array containing 2 number
+### FAIL
 
-# Test Results
-
-### TC17.1 PASS
-
-### TC17.2 FAIL
+### Comment: Median checked the range of the quartiles which in this case was 1.
 
 
 # Tests for Interquartile range
 
 ## TC18.1
 ### Test with array containing numbers
+### PASS
 
 ## TC18.2
 ### Test with array containing 2 number
-
-# Test Results
-
-### TC18.1 PASS
-
-### TC18.2 FAIL
+### FAIL
 
 
 # Tests 9/30/2024 SECOND TESTS
@@ -314,48 +239,57 @@
 
 ## TC6.1
 ### Test with array containing numbers
+### PASS
 
 ## TC6.2
+### Test with array containing 1 number
+### PASS
+
+## TC6.3
 ### Test with array containing 2 number
+### PASS
 
-# Test Results
 
-### TC6.1 PASS
+# Tests for Mode
 
-### TC6.2 PASS
+## TC16.1
+### Test with array containing numbers
+### PASS
 
-### TC6.3 PASS
+## TC6.2
+### Test with array containing 1 number
+### PASS
+
+## TC16.3
+### Test with array containing 2 number
+### PASS
 
 
 # Tests for Quartiles
 
 ## TC17.1
 ### Test with array containing numbers
+### PASS
+
+## TC6.2
+### Test with array containing 1 number
+### PASS
 
 ## TC17.2
 ### Test with array containing 2 number
-
-# Test Results
-
-### TC17.1 PASS
-
-### TC17.2 PASS
-
-### TC17.3 PASS
+### PASS
 
 
 # Tests for Interquartile range
 
 ## TC18.1
 ### Test with array containing numbers
+### PASS
+
+## TC6.2
+### Test with array containing 1 number
+### PASS
 
 ## TC18.2
 ### Test with array containing 2 number
-
-# Test Results
-
-### TC18.1 PASS
-
-### TC18.2 PASS
-
-### TC18.3 PASS
+### PASS
