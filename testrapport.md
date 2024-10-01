@@ -1,5 +1,7 @@
 # Tests 9/30/2024
 
+## All tests are done manually through the "testApp" statisticsTest.js.
+
 # Tests for Validation
 
 ## TC1.1
