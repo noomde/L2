@@ -2,7 +2,7 @@ import { ValidateInput } from './validation/validateInput.js'
 import { ModeCalculations } from './calculations/modeCalculations.js'
 import { VarianceCalculations } from './calculations/varianceCalculations.js'
 import { getUpperQuartile } from './calculations/quartileCalculations.js'
-import { checkLength } from './validation/checkLength.js'
+import { validateLength } from './validation/checkLength.js'
 /**
  * Statistical math class.
  */
@@ -179,7 +179,7 @@ export class Statistics {
    */
   sampleVariance(numArray) {
     ValidateInput.checkInput(numArray)
-    checkLength(numArray)
+    validateLength(numArray)
     const mean = this.mean(numArray)
     const squaredDifference = VarianceCalculations.squareAndSubtractDifference(numArray, mean)
 
@@ -194,7 +194,7 @@ export class Statistics {
    */
   sampleStandardDeviation(numArray) {
     ValidateInput.checkInput(numArray)
-    checkLength(numArray)
+    validateLength(numArray)
     return Math.sqrt(this.sampleVariance(numArray))
   }
 
@@ -246,7 +246,7 @@ export class Statistics {
    */
   quartiles(numArray) {
     ValidateInput.checkInput(numArray)
-    checkLength(numArray)
+    validateLength(numArray)
     const sortedArray = this.sortByAscending(numArray)
 
     const Q1 = sortedArray.slice(0,  Math.floor(sortedArray.length / 2))

@@ -1,29 +1,18 @@
-PLANERING
-Min första plan var att skapa en statistik/logistik modul. Detta trodde jag då var smart för att jag inte hade hittat något på mdn när jag gjorde en snabb sökning. Detta löstes ganska smidigt bortsett från sjukdom.
-På grund av att jag senare märkte att det inte alls var unikt utan rättare sagt "mainstream" så valde jag att försöka komma på något nytt. Jag kom då på tanken att antingen skapa en mer nybörjarvänlig modul
-eller att göra en väldigt bra validering till det tidigare skapat. Detta genom någon typ av "wrapper". Den versionen jag tyckte lät bäst var något som kallas decorator (Decorator är inte standard ännu).
-Har därför nu kommit fram till att skapa många små metoder som tydligt ger dig respons över varför det inte funkar som det bör göra. 
+# REFLEKTION
+### Personligen har jag tyckt att hela tanken med att metoder/funktioner inte ska ha mer än 2-4 rader kod är bra. Men jag tycker även att det blir fel när t.ex man behöver en "större" funktion. Alltså i mitt fall en funktion som har en massa mindre validationfunktioner t.ex eller quartile och mode. De hade t.ex blivit längre än 2-4 rader kod även om jag hade delat upp det ännu mer. 
 
-PROBLEM
-1. För lite komplexitet
-2. Decorator inte standard
-3. sjukdom
+### Funktioner ska inte ha några sidoeffekter och bör inte ha fler än 1 eller 2 argument i många fall. Även saker som att inte upprepa sig tycker jag gör det tydligt vad som behövs av en funktion och ungefär hur de ska se ut. Bara med saker som att inte upprepa sig så blir det väldigt lätt att förstå lite mer att vissa delar kan delas upp. I boken står det även att när man skriver bra funktioner så börjar det klumsigt och sedan gör man det bättre med tiden. Jag kan förstå hur det är så i många fall men jag tycker även att du bör sätta tydliga mål och planera din kodning innan för att ta bort så mycket av det klumsiga som det går.
 
-MÅL
-1. En statistik modul
-2. Den ska vara säker
-3. lätt att använda och tydlig
-4. Kunna hjälpa dig att spara tid på mindre ekvationer
-5. Tydligt förklara den matematiska processen
+### Även om inte just det kapitlet är en del av denna uppgift så har jag verkligen försökt att ta till mig kommentarskapitlet. Men jag gillar att ha JSDoc och tycker att det är extremt viktigt vid det här fallet där om det här nu skulle bli ett npm-paket så kommer JSDoc tillåta dig att sväva musen över en funktion och se vad som förväntas som argument och vad metoder kommer göra. 
 
-REFLEKTION/TANKAR
-Personligen har jag tyckt att hela tanken med att metoder/funktioner inte ska ha mer än 2-4 rader kod är bra. Men jag tycker även att det blir fel när t.ex man behöver en större "bindelse" funktion.
-Alltså i mitt fall en funktion som har en massa mindre validationfunktioner. Även om inte just det kapitlet är del av denna uppgift så har jag verkligen försökt att ta till mig kommentars kapitlet.
-Men jag gillar verkligen att ha jsdoc och tycker att det är extremt viktigt vid det här fallet där om det här nu skulle bli ett npm paket så kommer jsdoc tillåta dig att sväva musen över en funktion
-och se vad som förväntas till argument och vad funktioner kommer göra. Jag tyckte inte direkt att namngivningskapitlet bidrog så mycket men det kanske är mest för att det är saker som på något sett
-känns självklart. Det enda jag typ la märke till är att det är bättre att ha längre och tydliga namn än korta lite mindre tydliga namn. Jag tycker att den delen som verkligen göra så att det känns
-som att man vill skriva bättre kod är kommentars kapitlet. Om man behöver en kommentar så betyder det att din kod inte är tillräckligt bra/tydlig. Detta är något jag verkligen tycker är bra men även
-ser problem med. Det funkar ju liksom självklart inte för nya proggrammerare då kommentarer defintivt bidrar till tydlighet på grund av att man inte kan något. Jag tycker att boken bör gå genom att 
-kommentarer och rolig namngivning är en dålig vana men det är också dessa dåliga vannor som gör det så tydligt vad som behöver bli bättre. Jag vill även förtydliga att jag har försökt hålla mig till 
-kodstandarden men på grund av mina nuvarande förmågor så har jag inte möjlighet att ha alla funktioner så små och jag försöker bidra till namngivning som jag tror att både du och jag kommer förstå
-även om det möjligtvis kan vara fel.
+### Jag tycker att den delen som verkligen gör så att det känns som att man vill skriva bättre kod är kommentarskapitlet. Om man behöver en kommentar så betyder det att din kod inte är tillräckligt bra/tydlig. Detta är något jag verkligen tycker är bra men även ser problem med.
+
+### Det funkar ju självklart inte för nya programmerare då kommentarer definitivt bidrar till tydlighet på grund av att man inte kan något. Jag tycker att boken bör gå genom att kommentarer och rolig namngivning är en dålig vana men det är också dessa dåliga vanor som gör det så tydligt vad som behöver bli bättre.
+
+### Jag tyckte inte direkt att namngivningskapitlet bidrog så mycket men det kanske är mest för att det är saker som på något sätt känns självklara. Det enda jag typ la märke till är att det är bättre att ha längre och tydliga namn än korta lite mindre tydliga namn. Detta är något som jag inte alls är/var bra på och känner fortfarande att det är en av de svåraste delarna. Jag har därför försökt vara extremt tydlig och offrat lite av de "vackra" korta namnen.
+
+### Vi kan lite snabbt gå genom några av de delar jag minns men inte la jätte mycket märke på. Namn ska vara möjliga att uttala, försöka att undvika mentalt ger saker namn, klass namn ska vara substantiv och metoder ska vara verb. De flesta av de över är viktigt och bidrar till tydliga namn. I mitt fall så har jag inte direkt hållt mig till substantiv som metod namn då enligt mig skulle förlänge något redan tydligt. Hade kunnat döpa om allt till calculateMean() t.ex för att vara extra tydlig men gillar inte det i detta fall. Något som jag tror gör saker tydligt är att undvika mental namngivning. Om man inte ger andra användare/utvecklare någon möjlighet att mental namnge så har du gjort ett bra och tydligt namn.
+
+### Jag vill även förtydliga att jag har försökt hålla mig till kodstandarden men på grund av mina nuvarande förmågor så har jag inte möjlighet att ha alla funktioner så korta som jag önskar. Jag försöker bidra till namngivning som jag tror att både du och jag kommer förstå även om det möjligtvis kan vara fel.
+
+### För att avsluta det här så vill jag tydligt säga att jag tycker att boken har varit extremt bra. Den har varit tydlig, kortfattat och lärorik. Detta bidrar till väldigt snabba resultat och även bekvämare/tydligare utvecklare. För mig så har jag verkligen försökt att ta till mig de delar för att kuna förbättra de delar som jag och även många andra är väldigt dåliga på.
