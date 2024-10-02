@@ -53,7 +53,7 @@ export class CalculationGuide {
       definition: 'Standard deviation is the measure to see how far each numbers are from the mean. However compared to variance this is the squared root of the number.',
       steps: [
         'Calculate the variance.',
-        'square root the variance number.'
+        'nth root the variance number. (n is the amount of numbers)'
       ]}
   }
 

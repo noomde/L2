@@ -6,7 +6,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "start": "node testApp/statisticsTest.js",
+    "start": "node testApp/calculcationsGuideTest.js",
     "build": "vite build",
     "serve": "vite preview",
     "lint": "npx eslint /src || exit 0",
