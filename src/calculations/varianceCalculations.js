@@ -15,6 +15,12 @@ export class VarianceCalculations {
     return numArrayCopy
   }
 
+  /**
+   * Calculates the sample variance.
+   *
+   * @param {number[]} numArray - An array of numbers.
+   * @returns {number} - the sample variance.
+   */
   static calculateSampleVariance(numArray) {
     let divident = 0
     for (let number of numArray) {
