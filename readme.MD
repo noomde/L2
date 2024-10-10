@@ -1,8 +1,6 @@
-# Statistics Module
+# Statistics module
 
-# Why Create a Statistics module
-
-### I have been personally interested in a module that could automate these types of statistical calculations, and that interest led me to develop this module (And because of schoolwork). This is the result of that pursuit, allowing for easier handling of statistical calculations.
+### 
 
 # Features
 
@@ -11,8 +9,6 @@
 - Easily sort your numbers ascening or descending (More easily than before).
 - Allows you to measure mean in 3 different ways
 - Allows you to make population and sample calculations.
-
-# Usage examples and method descriptions
 
 ## sum method
 
