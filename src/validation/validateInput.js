@@ -24,7 +24,7 @@ export class ValidateInput {
         throw new TypeError(`You have entered the type undefined on index ${i}. The program can only handle the type number.`)
       }
       if (isNaN(numArray[i])) {
-        throw new TypeError(`You have entered the type number NaN on index ${i}. The program can not handle Nan. Please remove Nan and try again.`)
+        throw new TypeError(`You have entered the type number NaN on index ${i}. The program can not handle NaN. Please remove NaN and try again.`)
       }
       else if (typeof numArray[i] !== 'number') {
         throw new TypeError('The array can only handle numbers.')
@@ -45,5 +45,6 @@ export class ValidateInput {
       throw new TypeError('The argument can not be empty')
     }
     this.#checkTypes(numArray)
+    return true
   }
 }
