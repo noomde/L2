@@ -3,7 +3,6 @@ import { CalculationGuide } from '../src/calculationGuide.js'
 describe('CalculationGuide Tests', () => {
   let calcGuide
 
-  // Initialize a new CalculationGuide object before each test
   beforeEach(() => {
     calcGuide = new CalculationGuide()
   })
